@@ -1,0 +1,3 @@
+Let's start with some print statement 
+print is a default method provided by python to print data into console
+now lets solve few problems to understand more about print statements

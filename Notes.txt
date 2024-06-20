@@ -1,0 +1,186 @@
+Python Introduction
+
+Software to be downloaded:
+
+Python of version (LTS) : https://www.python.org/downloads/
+complete installations and never forget to add path during installations
+
+VS Code : https://code.visualstudio.com/download
+
+python is the programing language which is responsible for machine to understand the script we write
+lets learn this total python with a live case 
+
+imagine you are going to cook something
+
+House : System
+Stove : python
+Kitchen : IDE
+Ingredients : Data
+
+Dish : Final Project
+
+Steps to make a dish(tomato rice):
+1. you need a House
+2. you need a Stove
+3. need Ingredients
+4. you need to know the process
+5. need someone to taste and check it (or can self test)
+6. completed
+
+Steps to make a python project:
+1. you need a laptop
+2. you need Python installed to make it great you need an IDE
+3. you need Data
+4. you should know programing
+5. you need someone to test it.
+6. complete
+
+
+
+*********************************
+
+You need to know what is Data:
+
+Data is some raw memory which can be either text, images, vidoes, audio ets
+
+as we are new to this we assume data is nothing but text
+
+If i provide you basic Ingredients like salt and sugar you will store them in boxes. and label it.
+
+ex: Username ="Madhav" {you have a memory labelled as Username and you store "Madhav" in it}
+    Sugar ="pour sugar into it" {you have a box labelled as sugar and you pour in it}
+
+    this is nothing but variables(boxes to store data).
+
+    type of variables:
+    Premitive: (basic)
+    -int =all numbers
+    -float = decimal values
+    -boolen = true or false
+    -String = All characters
+
+    Size String>Float>int>boolen
+    
+
+
+LETS STARTS LOOPS
+
+You made tea and now you have to pour it in glasses
+
+when will you stop
+either you know how many cups to be made or you ran out of cups
+
+to handle same thing multiple times we need loops
+
+lets see for loop:
+for i in range(0,10):
+    print("Madhav")
+
+
+Lets see other data types
+so far i have covered int, float, string and boolen 
+
+apart from this Premitive datatypes we also have some non Premitive which are list,tupple,Dictionary etc
+
+List and tupple are same as Arrays in java 
+for example i am playing a game at each level i am getting my score i want to store them for this with the basic knowledge i can do 
+score1=45
+score2=34.....
+...
+score50=54
+
+at each level i am creating a new varibale and storing my data 
+
+but this is not feasible as i am creating a large number of variables 
+
+instead i can store them in a list 
+
+ex: MyScoreList = [23,45,43,56,......,54]
+
+this way it is easy to store and access 
+similarly we have tupple
+
+
+let me clearly explain list, tupple, Dictionary and Steps
+
+*********Lists
+Definition: An ordered collection of items which can be of different types.
+Syntax: my_list = [1, 2, 3, 'a', 'b', 'c']
+Key Points:
+Lists are mutable (elements can be changed).
+Lists can contain duplicate elements.
+Indexing starts at 0.
+
+example code python
+
+my_list = [1, 2, 3, 4]
+my_list.append(5)  # Adds an element to the end
+my_list.remove(2)  # Removes the first occurrence of the element
+my_list[1] = 10    # Changes the element at index 1
+
+
+Slicing:
+
+my_list[1:3]  # Returns [10, 3]
+
+
+****************Tuples
+Definition: An ordered collection of items which can be of different types.
+Syntax: my_tuple = (1, 2, 3, 'a', 'b', 'c')
+Key Points:
+Tuples are immutable (elements cannot be changed).
+Tuples can contain duplicate elements.
+Indexing starts at 0.
+
+python example
+
+my_tuple = (1, 2, 3, 4)
+my_tuple[1]  # Accesses the element at index 1
+len(my_tuple)  # Returns the length of the tuple
+
+Slicing:
+
+my_tuple[1:3]  # Returns (2, 3)
+
+
+*************Dictionaries
+Definition: An unordered collection of key-value pairs.
+Syntax: my_dict = {'key1': 'value1', 'key2': 'value2'}
+Key Points:
+Keys must be unique and immutable.
+Values can be of any data type.
+Dictionaries are mutable.
+
+python example
+
+my_dict = {'name': 'Alice', 'age': 25}
+my_dict['age'] = 26         # Changes the value associated with 'age'
+my_dict['city'] = 'New York'  # Adds a new key-value pair
+del my_dict['name']         # Deletes the key-value pair with key 'name'
+Accessing Elements:
+python example
+
+my_dict['age']  # Returns 26
+my_dict.get('age')  # Returns 26, another way to access elements
+
+
+*************Sets
+Definition: An unordered collection of unique elements.
+Syntax: my_set = {1, 2, 3, 4}
+Key Points:
+Sets do not allow duplicate elements.
+Sets are mutable (but the elements themselves must be immutable).
+
+Example code
+my_set = {1, 2, 3}
+my_set.add(4)      # Adds an element to the set
+my_set.remove(2)   # Removes an element from the set
+my_set.discard(5)  # Removes an element if it exists, does nothing otherwise
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+set1.union(set2)     # Returns {1, 2, 3, 4, 5}
+set1.intersection(set2)  # Returns {3}
+set1.difference(set2)    # Returns {1, 2}
+
+   
